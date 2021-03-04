@@ -39,7 +39,7 @@ time.sleep(3)
 class_name = []
 #専門図書館指定
 #資料種別指定 全て→図書→雑誌
-#ベタ貼り()
+
 class_name = ['l_local_comp_search_branch_1','l_local_comp_search_documentType_all','l_local_comp_search_documentType_book','l_local_comp_search_documentType_magazine_title']
 
 #checkboxのクリック
@@ -69,7 +69,6 @@ time.sleep(5)
 first_page = driver.find_element_by_class_name("l_page_current_hidden").get_attribute("value")
 end_page = driver.find_element_by_class_name("l_page_total_hidden").get_attribute("value")
 page_count = int(end_page) - int(first_page)
-print("@ページ数",page_count)
 
 #現在時刻を取得
 dt_now = datetime.datetime.now()
