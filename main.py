@@ -18,7 +18,7 @@ def line_notify(message):
 #なにかが起こって強制終了するとき用
 def thread():
     # driver.quit()
-    line_notify("エラーが発生しています")
+    line_notify("本日の情報をお伝えしました。")
     exit()
 
 #Headless
